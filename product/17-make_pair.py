@@ -9,10 +9,12 @@ import json
 import MeCab
 
 import itertools
+
+import pickle
 terms = set( json.loads( open('terms.json').read() ) )
 
 m = MeCab.Tagger('-Owakati')
-pairs = []
+relations = []
 for name in glob.glob('../../scraping-designs/rakuten-scrape/items/*'):
   obj = json.loads( open(name).read() )
   text = obj['item'] + obj['desc']
@@ -21,6 +23,6 @@ for name in glob.glob('../../scraping-designs/rakuten-scrape/items/*'):
   if len(fil) >= 2:
     print(fil)
     for pair in itertools.combinations(fil, 2):
-      pairs.append( pair )
+      relations.append( tuple(pair) )
 
-open('pairs.json', 'w').write( json.dumps(pairs, indent=2, ensure_ascii=False) )
+open('relations.pkl', 'wb').write( pickle.dumps(relations) )
