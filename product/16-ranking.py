@@ -19,7 +19,7 @@ for term, target in term_vec.items():
   term_rel[ term ] = d/b
 
 terms = []
-for term, rel in sorted(term_rel.items(), key=lambda x:x[1]*-1)[0:250]:
+for term, rel in sorted(term_rel.items(), key=lambda x:x[1]*-1)[0:200]:
   # print(term, rel)
   if 'iphone' not in term:
     terms.append( term )
