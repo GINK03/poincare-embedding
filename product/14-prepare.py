@@ -22,5 +22,7 @@ for name in glob.glob('../../scraping-designs/rakuten-scrape/items/*'):
   obj = json.loads( open(name).read().lower() )
 
   text = obj['item'] + obj['desc']
-  print(text)
+  buff += m.parse(text)
 
+open('wakati.txt', 'w').write( buff )
+  
