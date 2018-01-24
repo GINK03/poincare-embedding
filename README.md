@@ -18,6 +18,10 @@ Euclid空間にエンベッディングするようなword2vecは意味の上下
 </div>
 gEというユークリッド距離がxが1に近づけば無限に大きくなることがわかります。
 
+このポアンカレボール上にある二点間の距離はこのように表現され、単純なユークリッド距離ではないことが見て取れます。  
+<div align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/35318593-5bd1d714-011f-11e8-9d2e-5091d9851035.png">
+</div>
 
 
 ## 実験
