@@ -17,8 +17,11 @@ import re
 import json
 m = MeCab.Tagger('-Owakati')
 
+files = glob.glob('../../scraping-designs/rakuten-scrape/items/*')
+size = len(files)
 buff = ''
-for name in glob.glob('../../scraping-designs/rakuten-scrape/items/*'):
+for index, name in enumerate(files):
+  print(index, '/', size)
   obj = json.loads( open(name).read().lower() )
 
   text = obj['item'] + obj['desc']
