@@ -20,7 +20,7 @@ gEというユークリッド距離がxが1に近づけば無限に大きくな�
 
 このポアンカレボール上にある二点間の距離はこのように表現され、単純なユークリッド距離ではないことが見て取れます。  
 <div align="center">
-  <img width="200px" src="https://user-images.githubusercontent.com/4949982/35318751-1c334ce0-0120-11e8-98d1-25c896338356.png">
+  <img width="380px" src="https://user-images.githubusercontent.com/4949982/35318751-1c334ce0-0120-11e8-98d1-25c896338356.png">
 </div>
 
 
