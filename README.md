@@ -28,6 +28,9 @@ gEというユークリッド距離がxが1に近づけば無限に大きくな�
   <img width="380px" src="https://user-images.githubusercontent.com/4949982/35318870-a2a779b8-0120-11e8-880f-ff7a1d36ecc4.png">
 </div>
 
+双極幾何学空間に埋め込むと、情報が何らかの上下関係を持っており、木構造で表現できるとき、ルートノード（つまり抽象度が高い）方が真ん中にきて、枝葉に近いほど、外周部に行く傾向があるとのことで、これはポアンカレ空間に木の幹と枝を配置しようと試みるとき、幹が真ん中にきて枝が外周に来るとおさまりがいいのは、直感的に理解できると思います。  
+
+なんか以前やったDeep Graph Convolutionに似ているなと思っていたら、Abejaさんのブログでも同様の記述を発見しました[2]
 
 ## 実験
 
@@ -37,3 +40,4 @@ gEというユークリッド距離がxが1に近づけば無限に大きくな�
 
 ### 参考文献
 - [1] [Poincaré Embeddings for Learning Hierarchical Representations](https://arxiv.org/abs/1705.08039)
+- [2] [異空間への埋め込み！Poincare Embeddingsが拓く表現学習の新展開](http://tech-blog.abeja.asia/entry/poincare-embeddings)
