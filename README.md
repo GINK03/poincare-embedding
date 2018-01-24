@@ -23,6 +23,11 @@ gEというユークリッド距離がxが1に近づけば無限に大きくな�
   <img width="380px" src="https://user-images.githubusercontent.com/4949982/35318751-1c334ce0-0120-11e8-98d1-25c896338356.png">
 </div>
 
+この距離関数に基づいて損失関数L(Θ)を定義します。
+<div align="center">
+  <img width="380px" src="https://user-images.githubusercontent.com/4949982/35318870-a2a779b8-0120-11e8-880f-ff7a1d36ecc4.png">
+</div>
+
 
 ## 実験
 
