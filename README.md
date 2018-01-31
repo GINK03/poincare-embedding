@@ -64,6 +64,25 @@ poincare embeddingの論文では、動物名と動物の所属する種類な�
 ...
 ```
 
+### 可視化
+gensimでの実装は、jupyterとplotlyを用いてこのようにすることで、簡単に可視化できます  
+(おそらくFacebook ResearchのPyTorchでの実装は同じ方法は通用しませんが、こっちの方が本来性能はよさそうです)  
+```python
+import plotly
+import gensim.viz.poincare
+
+import pickle
+model = pickle.loads(open('model.pkl','rb').read())
+relations = pickle.loads(open('relations.pkl', 'rb').read() )
+
+plotly.offline.init_notebook_mode(connected=False)
+prefecutre_map = gensim.viz.poincare.poincare_2d_visualization(model=model,
+                                                               tree=relations,
+                                                               figure_title="艦種",
+                                                               show_node_labels=model.kv.vocab.keys())
+plotly.offline.iplot(prefecutre_map)
+```
+
 ### 評価
 ポアンカレボール上に配置するときに、乱択アルゴリズムでサンプリングするらしいので、小さいデータセットではきれいな円状に配置されませんが、おおむねそれらしい結果が得られています。（割り切ってランダムネスの影響を許容するといいでしょう）
 <div align="center">
