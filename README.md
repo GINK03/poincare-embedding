@@ -74,6 +74,11 @@ poincare embeddingの論文では、動物名と動物の所属する種類な�
 
 より、細やかに丁寧に距離函数を再定義できそうな実装系としてFacebook社のPytorchのSGDオプティマイザと距離函数を双曲線距離に定義した物をつかうと、learning rateを最初に大きく取って少なくしていくなどの戦略が取れるので、より細やかに設定できそうです[3]  
 
+<div align="center">
+  <img width="450px" src="https://github.com/facebookresearch/poincare-embeddings/blob/master/wn-nouns.jpg">
+</div>
+<div align="center"> 図 Facebook ResearchによるPoincare Embedding</div>
+
 ### 参考文献
 - [1] [Poincaré Embeddings for Learning Hierarchical Representations](https://arxiv.org/abs/1705.08039)
 - [2] [異空間への埋め込み！Poincare Embeddingsが拓く表現学習の新展開](http://tech-blog.abeja.asia/entry/poincare-embeddings)
