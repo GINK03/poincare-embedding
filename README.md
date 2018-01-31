@@ -9,7 +9,7 @@ Euclid空間にエンベッディングするようなword2vecは意味の上下
 <div align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35317172-d165049e-0118-11e8-8704-33fb389696c9.png">
 </div>
-<div align="center"> 図1. ハニカム構造のPincare Ball(Wikipediaより)</div>
+<div align="center"> 図1. ハニカム構造のPoincare Ball(Wikipediaより)</div>
 ポアンカレボールでは外に行くほど情報が密になり、空間が広がっているともとらえます。
  
  数式で表現するとこのようになって、
