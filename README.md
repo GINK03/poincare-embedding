@@ -91,7 +91,7 @@ plotly.offline.iplot(prefecutre_map)
 
 なかなかgemsinで実行するとうまくいきませんね。（最適化アルゴリズムにSGDなどの乱択がはいるので仕方がないですが。。。）  
 
-より、細やかに丁寧に距離函数を再定義できそうな実装系としてFacebook社のPytorchのSGDオプティマイザと距離函数を双曲線距離に定義した物をつかうと、learning rateを最初に大きく取って少なくしていくなどの戦略が取れるので、より細やかに設定できそうです[3]  
+より、細やかに丁寧に距離函数を再定義できそうな実装系としてFacebook社のPytorchのSGDオプティマイザと距離函数を双曲線距離に定義した物を使うと、learning rateを最初に大きく取って少なくしていくなどの戦略が取れるので、より細やかに綺麗に学習が収束しそうです[3]  
 
 <div align="center">
   <img width="450px" src="https://github.com/facebookresearch/poincare-embeddings/blob/master/wn-nouns.jpg">
