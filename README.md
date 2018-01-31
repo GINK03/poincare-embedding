@@ -89,7 +89,7 @@ plotly.offline.iplot(prefecutre_map)
 <div align="center">
   <img width="450px" src="https://user-images.githubusercontent.com/4949982/35321964-eddf729a-012b-11e8-91e8-2679f32a1d10.png">
 </div>
-朝潮型が変なところに来ています。Optimizerの動作のラムダムネスが十分でないように見えます  
+朝潮型が変なところに来ています。Optimizerの動作のラムダムネスにより変なところにきているようです 
 
 なかなかgemsinで実行するとうまくいきませんね。（最適化アルゴリズムにSGDなどの乱択がはいるので仕方がないですが。。。）  
 
