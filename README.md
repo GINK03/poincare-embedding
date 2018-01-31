@@ -70,6 +70,11 @@ poincare embeddingの論文では、動物名と動物の所属する種類な�
   <img width="450px" src="https://user-images.githubusercontent.com/4949982/35321964-eddf729a-012b-11e8-91e8-2679f32a1d10.png">
 </div>
 
+なかなかgemsinで実行するとうまくいきませんね。（最適化アルゴリズムにSGDなどの乱択がはいるので仕方がないですが。。。）  
+
+より、細やかに丁寧に距離函数を再定義できそうな実装系としてFacebook社のPytorchのSGDオプティマイザと距離函数を双曲線距離に定義した物をつかうと、learning rateを最初に大きく取って少なくしていくなどの戦略が取れるので、より細やかに設定できそうです[3]  
+
 ### 参考文献
 - [1] [Poincaré Embeddings for Learning Hierarchical Representations](https://arxiv.org/abs/1705.08039)
 - [2] [異空間への埋め込み！Poincare Embeddingsが拓く表現学習の新展開](http://tech-blog.abeja.asia/entry/poincare-embeddings)
+- [3] [facebookresearch/poincare-embeddings](https://github.com/facebookresearch/poincare-embeddings)
